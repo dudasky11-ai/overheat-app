@@ -1,0 +1,8 @@
+.claude/
+__pycache__/
+*.hwpx
+*.docx
+학번이름.py
+코드설명.md
+2901.py
+*.png
