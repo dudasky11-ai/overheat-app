@@ -1,8 +1,10 @@
 # 📱 스마트폰 과열 진단 웹앱
 
 주변 온도, 충전 방식, 케이스 사용, 충전 중 게임 여부를 고르면 배터리 과열 위험 점수(0~9점)를 계산해 안전·주의·위험으로 알려주는 Streamlit 웹앱입니다.
+진단할 때마다 결과가 **진단 기록** 표에 쌓이고, 기록이 2개 이상이면 **점수 변화 그래프**가 나타납니다. 기록은 CSV 파일로 내려받을 수 있습니다 (엑셀에서 한글이 깨지지 않게 저장).
 
-- `app.py` — 웹앱 코드
-- `웹앱코드설명.md` — 코드 설명
+- `app.py` — 웹앱 코드 (점수 계산, 판정, 진단 기록, CSV 내려받기, 점수 그래프)
+- `웹앱코드설명.md` — 코드 설명 (구간별 설명과 발표 예상 질문)
+- `requirements.txt` — 웹앱 실행에 필요한 패키지 (Streamlit)
 
-실행: `pip install streamlit` 후 `streamlit run app.py`
+실행: `pip install -r requirements.txt` 후 `streamlit run app.py`
