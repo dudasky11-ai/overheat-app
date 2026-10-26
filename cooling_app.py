@@ -1,7 +1,16 @@
 # 냉각 소재 비교 계산기 웹앱 (Streamlit)
 # 음료를 원하는 온도로 식히려면 소재별로 얼마나 필요한지 계산하고,
 # 녹는 소재(잠열)와 녹지 않는 소재(현열)의 차이를 비교함
+import sys
 import streamlit as st
+from streamlit import runtime
+from streamlit.web import cli
+
+# 0. 파이썬에서 그냥 Run(F5)으로 실행했을 때는 Streamlit을 대신 켜 줌
+#    (streamlit run 으로 실행된 경우에는 runtime.exists()가 True라서 건너뜀)
+if __name__ == "__main__" and not runtime.exists():
+    sys.argv = ["streamlit", "run", __file__]
+    sys.exit(cli.main())
 
 WATER_C = 4.18  # 물(음료)의 비열 (J/g·°C)
 

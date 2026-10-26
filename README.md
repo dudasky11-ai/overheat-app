@@ -16,4 +16,4 @@
 - `cooling_app.py` — 웹앱 코드
 - `냉각계산기_웹앱코드설명.md` — 코드 설명, 배포 방법, 발표 순서
 
-실행: `pip install streamlit` 후 `streamlit run cooling_app.py`
+실행: `pip install streamlit` 후 `cooling_app.py`를 파이썬에서 Run(F5), 또는 `streamlit run cooling_app.py`
